@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Performance Predictor</title>
+    <style>
+        body{
+            font-family: Arial;
+            background: #f4f4f4;
+            padding: 30px;
+        }
+        .container{
+            width: 500px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+        h1{
+            text-align: center;
+        }
+        input{
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        button{
+            width: 100%;
+            padding: 12px;
+            background: #007bff;
+            color: white;
+            border: none;
+            margin-top: 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .result{
+            margin-top: 20px;
+            text-align: center;
+            font-size: 22px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Student Performance Predictor</h1>
+    <form action="/predict" method="post">
+        <input type="number" step="any" name="Hours_Studied" placeholder="Hours Studied" required>
+        <input type="number" step="any" name="Attendance" placeholder="Attendance" required>
+        <input type="number" name="Parental_Involvement" placeholder="Parental Involvement" required>
+        <input type="number" name="Access_to_Resources" placeholder="Access to Resources" required>
+        <input type="number" name="Extracurricular_Activities" placeholder="Extracurricular Activities" required>
+        <input type="number" step="any" name="Sleep_Hours" placeholder="Sleep Hours" required>
+        <input type="number" step="any" name="Previous_Scores" placeholder="Previous Scores" required>
+        <input type="number" name="Motivation_Level" placeholder="Motivation Level" required>
+        <input type="number" name="Internet_Access" placeholder="Internet Access" required>
+        <input type="number" name="Tutoring_Sessions" placeholder="Tutoring Sessions" required>
+        <input type="number" name="Family_Income" placeholder="Family Income" required>
+        <input type="number" name="Teacher_Quality" placeholder="Teacher Quality" required>
+        <input type="number" name="School_Type" placeholder="School Type" required>
+        <input type="number" name="Peer_Influence" placeholder="Peer Influence" required>
+        <input type="number" step="any" name="Physical_Activity" placeholder="Physical Activity" required>
+        <input type="number" name="Learning_Disabilities" placeholder="Learning Disabilities" required>
+        <input type="number" name="Parental_Education_Level" placeholder="Parental Education Level" required>
+        <input type="number" name="Distance_from_Home" placeholder="Distance from Home" required>
+        <input type="number" name="Gender" placeholder="Gender" required>
+
+        <button type="submit">Predict Score</button>
+    </form>
+    {% if prediction %}
+        <div class="result">
+            Predicted Exam Score: {{ prediction }}
+        </div>
+    {% endif %}
+</div>
+</body>
+</html>
