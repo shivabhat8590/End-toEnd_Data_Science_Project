@@ -72,13 +72,17 @@ save the trained model
 Run FastAPI Server
 uvicorn app.main:app --reload
 
+<img width="1357" height="339" alt="Image" src="https://github.com/user-attachments/assets/8e776bde-53bd-4e59-a8c1-168ecaa03dca" />
+
+
 Open browser:
 
 http://127.0.0.1:8000
 API Endpoint
 Predict Student Score
-
 POST /predict
+
+<img width="1884" height="1011" alt="Image" src="https://github.com/user-attachments/assets/d9657ff3-f5d0-44a1-a79d-6d483707d159" />
 
 Example Input:
 
