@@ -1,3 +1,12 @@
+COMPANY: CODTECH IT SOLUTIONS
+
+NAME: Shivaprasad Bhat M
+
+INTERN ID: CTIS7640
+
+DOMAIN: DATA SCIENCE DURATION: 12 WEEKS
+
+MENTOR: NEELA SANTOSH
 Student Performance Prediction System
 
 A complete end-to-end Machine Learning project that predicts student exam performance using various academic and lifestyle factors. The project includes data preprocessing, model training, FastAPI backend development, and a web-based prediction interface.
